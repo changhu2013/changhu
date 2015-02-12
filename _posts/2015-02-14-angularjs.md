@@ -12,8 +12,7 @@ comments: true
 ### 1. Hello World
 
 <script src="{{site.baseurl}}/javascripts/angular.js"></script>
-<input text="text" ng-bind="name" />{{name}}
-
+<div ng-app><input type="text" ng-model="name" />你好:{{name}}</div>
 
 
 ---
