@@ -128,13 +128,3 @@ JDK 中的线程池通过 HashSet 存储工作者线程，通过 BlockingQueue �
 另外，如果待处理队列中没有任务要处理，并且工作者线程数目超过了核心工作者数目，那么，需要减少工作者线程数目。
 
 
-<!-- JiaThis Button BEGIN -->
-<div id="ckepop">
-	<span class="jiathis_txt">分享到：</span>
-	<a class="jiathis_button_tsina">新浪微博</a>
-	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
-	<a class="jiathis_counter_style"></a>
-</div>
-<script type="text/javascript" src="http://v2.jiathis.com/code/jia.js" charset="utf-8"></script>
-<!-- JiaThis Button END -->
-

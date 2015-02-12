@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/styles.css">
     <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/pygment_trac.css">
     <script src="{{site.baseurl}}/javascripts/scale.fix.js"></script>
+    <script type="text/javascript" src="http://v2.jiathis.com/code/jia.js" charset="utf-8"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <!--[if lt IE 9]>
@@ -26,6 +27,16 @@
       <section>
         <h3><a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a> {{ page.title }}</h3>{{ content }}
       </section>
+
+      <!-- JiaThis Button BEGIN -->
+      <div id="ckepop" style="float:right;">
+        <span class="jiathis_txt">分享到：</span>
+        <a class="jiathis_button_tsina">新浪微博</a>
+        <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+        <a class="jiathis_counter_style"></a>
+      </div>
+      <!-- JiaThis Button END -->
+
       <section class="comments">
         {% if page.comments %}
           {% include comments.ext %}
