@@ -7,3 +7,13 @@ comments: true
 
 ## Javascript 原型继承
 
+### 1. 基本数据类型
+
+- string
+- number
+- undefined
+- null
+- object
+
+
+### 2. 原型链
