@@ -1,3 +1,13 @@
+---
+
+layout: default
+title: 我的简历
+abstract : 求职意向Java开发工程师 JS工程师
+comments: false
+
+---
+
+
 # 联系方式
 
 - 手机：18511693692 (北京)
