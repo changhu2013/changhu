@@ -7,6 +7,7 @@ title: 文章目录
     {% for post in site.posts %}
         <a href="{{site.baseurl}}{{post.url}}"> {{ post.title }}  </a>
         {{ post.date | date: "%F" }} <br>
+        <p>{{ post.abstract }}</p>
     {% endfor %}
 </ul>
 

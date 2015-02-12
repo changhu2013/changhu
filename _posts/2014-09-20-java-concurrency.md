@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Java 中的并发
+abstract : 按 Java 语言规范中的说法，创建线程只有一种方式，就是创建一个 Thread 对象
 comments: false
 ---
 

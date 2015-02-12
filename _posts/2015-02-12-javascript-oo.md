@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Java 中的并发
+title: Javascript 面向对象编程
+abstract : JS原型继承
 comments: false
 ---
 
