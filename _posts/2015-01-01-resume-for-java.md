@@ -23,7 +23,7 @@ comments: false
  - 工作年限：**5年半**
  - 微博：[@changhu_](http://weibo.com/512353363)
  - Github: [https://github.com/changhu2013](https://github.com/changhu2013)
- - 期望职位：Java高级程序员，架构师
+ - 期望职位：Java开发工程师 JS工程师
  - 期望城市：北京
 
 ---
@@ -65,12 +65,12 @@ comments: false
 
 ## 演讲和讲义
 
-- 技术论坛：[NodeJS培训](https://github.com/changhu2013/resume/tree/master/resume/ppt/NodeJS培训-changhu-v1.ppt)
-- 技术论坛：[AngularJS培训](https://github.com/changhu2013/resume/tree/master/resume/ppt/AngularJS培训-changhu-v1.ppt)
-- 技术论坛：[JS面向对象培训](https://github.com/changhu2013/resume/tree/master/resume/ppt/javascript-oop-changhu.ppt)
-- 技术研讨会：[公司内部前端开发技术](https://github.com/changhu2013/resume/tree/master/resume/ppt/北自所技术研讨会(前端开发技术)-changhu-v1.ppt)
-- 技术研讨会：[安卓应用开发与Websocket技术应用](https://github.com/changhu2013/resume/tree/master/resume/ppt/技术研讨会研讨会(安卓应用开发与Websocket技术应用)-changhu-v3.ppt)
-- 技术研讨会：[移动应用开发技术选型与趋势分析](https://github.com/changhu2013/resume/tree/master/resume/ppt/技术研讨会研讨会(移动应用开发技术选型与趋势分析)-changhu-v2.ppt)
+- 技术论坛：[NodeJS培训](https://github.com/changhu2013/resume/raw/master/resume/ppt/NodeJS培训-changhu-v1.ppt)
+- 技术论坛：[AngularJS培训](https://github.com/changhu2013/resume/raw/master/resume/ppt/AngularJS培训-changhu-v1.ppt)
+- 技术论坛：[JS面向对象培训](https://github.com/changhu2013/resume/raw/master/resume/ppt/javascript-oop-changhu.ppt)
+- 技术研讨会：[公司内部前端开发技术](https://github.com/changhu2013/resume/raw/master/resume/ppt/北自所技术研讨会(前端开发技术)-changhu-v1.ppt)
+- 技术研讨会：[安卓应用开发与Websocket技术应用](https://github.com/changhu2013/resume/raw/master/resume/ppt/技术研讨会研讨会(安卓应用开发与Websocket技术应用)-changhu-v3.ppt)
+- 技术研讨会：[移动应用开发技术选型与趋势分析](https://github.com/changhu2013/resume/raw/master/resume/ppt/技术研讨会研讨会(移动应用开发技术选型与趋势分析)-changhu-v2.ppt)
 
 # 技能清单
 
