@@ -11,9 +11,7 @@ comments: true
 
 ### 1. Hello World
 
-<script src="{{site.baseurl}}/javascripts/angular.js"></script>
-<div ng-app><input type="text" ng-model="name" />你好:{{name}}</div>
-
+<div><input type="text" ng-model="name" />你好:{{name}}</div>
 
 ---
 [AngularJS培训PPT](https://github.com/changhu2013/resume/raw/master/resume/ppt/AngularJS培训-changhu-v1.ppt)
