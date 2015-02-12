@@ -65,12 +65,12 @@ comments: false
 
 ## 演讲和讲义
 
-- 技术论坛：[NodeJS培训](ppt/NodeJS培训-changhu-v1.ppt)
-- 技术论坛：[AngularJS培训](ppt/AngularJS培训-changhu-v1.ppt)
-- 技术论坛：[JS面向对象培训](ppt/javascript-oop-changhu.ppt)
-- 技术研讨会：[公司内部前端开发技术](ppt/北自所技术研讨会(前端开发技术)-changhu-v1.ppt)
-- 技术研讨会：[安卓应用开发与Websocket技术应用](ppt/技术研讨会研讨会(安卓应用开发与Websocket技术应用)-changhu-v3.ppt)
-- 技术研讨会：[移动应用开发技术选型与趋势分析](ppt/技术研讨会研讨会(移动应用开发技术选型与趋势分析)-changhu-v2.ppt)
+- 技术论坛：[NodeJS培训](https://github.com/changhu2013/resume/tree/master/resume/ppt/NodeJS培训-changhu-v1.ppt)
+- 技术论坛：[AngularJS培训](https://github.com/changhu2013/resume/tree/master/resume/ppt/AngularJS培训-changhu-v1.ppt)
+- 技术论坛：[JS面向对象培训](https://github.com/changhu2013/resume/tree/master/resume/ppt/javascript-oop-changhu.ppt)
+- 技术研讨会：[公司内部前端开发技术](https://github.com/changhu2013/resume/tree/master/resume/ppt/北自所技术研讨会(前端开发技术)-changhu-v1.ppt)
+- 技术研讨会：[安卓应用开发与Websocket技术应用](https://github.com/changhu2013/resume/tree/master/resume/ppt/技术研讨会研讨会(安卓应用开发与Websocket技术应用)-changhu-v3.ppt)
+- 技术研讨会：[移动应用开发技术选型与趋势分析](https://github.com/changhu2013/resume/tree/master/resume/ppt/技术研讨会研讨会(移动应用开发技术选型与趋势分析)-changhu-v2.ppt)
 
 # 技能清单
 
