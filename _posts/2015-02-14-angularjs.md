@@ -11,7 +11,7 @@ comments: true
 
 ### 1. Hello World
 
-<script src="{{site.baseurl}}/javascripts/angular.min.js"></script>
+<script src="{{site.baseurl}}/javascripts/angular.js"></script>
 <input text="text" ng-bind="name" />{{name}}
 
 
