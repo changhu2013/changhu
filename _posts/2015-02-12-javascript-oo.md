@@ -7,6 +7,8 @@ comments: false
 
 ## Javascript原型继承
 
+
+
 <!-- JiaThis Button BEGIN -->
 <div id="ckepop">
 	<span class="jiathis_txt">分享到：</span>
