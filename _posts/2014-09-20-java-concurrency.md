@@ -2,7 +2,7 @@
 layout: default
 title: Java 中的并发
 abstract : 按 Java 语言规范中的说法，创建线程只有一种方式，就是创建一个 Thread 对象。而从 HotSpot 虚拟机角度看，创建一个虚拟机线程有两种方式，一种是创建Thread对象，另一种是创建一个本地线程，加入到虚拟机线程中。
-comments: false
+comments: true
 ---
 
 ## 如何创建一个线程
