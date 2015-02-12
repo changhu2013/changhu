@@ -11,10 +11,20 @@ comments: true
 
 ### 1. Hello World
 
+> Angular JS 初体验
+
 <div ng-app>
-<input type="text" ng-model="name" />
+请输入您的名字:<input type="text" ng-model="name" />
 你好:<span ng-bind="name"></span>
 <div>
+
+```html
+	<div ng-app>
+		请输入您的名字:<input type="text" ng-model="name" />
+		你好:<span ng-bind="name"></span>
+	<div>
+
+```
 
 <script src="{{site.baseurl}}/javascripts/angular.js"></script>
 ---
