@@ -178,8 +178,35 @@ alert(p instanceof Person);
 
 ```
 
-
-
-
 ### 8.2 caller 
 
+- caller 谁呼我, callee函数内部识别自身(我是谁),解决了匿名递归的问题.
+- 遍历调用栈就需要一个新的成员caller
+
+```javascript
+
+	function foo1(){
+		foo2(v1 * 100);
+	}
+
+	function foo2(v1){
+		foo3(v1 * 100);
+	}
+
+	function foo3(v1){
+		var foo = arguments.callee;
+		while(foo && (foo != window)){
+			document.writeln('调用参数:');
+			var args = foo.arguments, argn = args.length;
+			for(var i = 0; i < argn; i++){
+				document.writeln('args[' + i + ']', args[i], '<br>');
+			}
+			document.writeln('<br>');
+			//上一级
+			foo = foo.caller;
+		}
+	}
+
+	foo1(1, 2);
+
+```
