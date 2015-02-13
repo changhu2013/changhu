@@ -139,10 +139,15 @@ header ul:before {
   box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0, inset rgba(255, 255, 255, 0.7) 0 -1px 0;
 }
 header ul li {
-  width: 79px;
+  width: 80px;
+  height: 80px;
   float: left;
   border-right: 1px solid #3A7CBE;
-  height: 38px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
 }
 header ul li.single {
   border: none;
