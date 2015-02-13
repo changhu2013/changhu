@@ -46,4 +46,17 @@ function f1(){
 </script>
 
 
+<<<<<<< HEAD
   
+=======
+### 1. 基本数据类型
+
+- string
+- number
+- undefined
+- null
+- object
+
+
+### 2. 原型链
+>>>>>>> 3a8caca0ee39b566025e4baccac950e0ed8c2153
