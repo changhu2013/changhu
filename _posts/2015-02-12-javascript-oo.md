@@ -81,7 +81,7 @@ alert(p instanceof Person);
 
 	var v;
 	if(typeof(v) === 'undefined'){
-		alert(alert(typeof(v)));
+		alert(typeof(v));
 	}
 
 	if(v === undefined){
@@ -96,4 +96,4 @@ alert(p instanceof Person);
 
 执行上面的代码
 <input type="button" onClick="f3()" value="点我" />
-<script type="text/javascript">function f3(){var v;if(typeof(v)===typeof(v)){alert(alert(typeof(v)));}if(v===undefined){alert(v===undefined);}if(!v){alert(!v);}}</script>
+<script type="text/javascript">function f3(){var v;if(typeof(v)===typeof(v)){alert(typeof(v));}if(v===undefined){alert(v===undefined);}if(!v){alert(!v);}}</script>
