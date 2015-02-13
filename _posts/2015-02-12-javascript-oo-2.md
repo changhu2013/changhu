@@ -96,7 +96,7 @@ comments: true
 
 ```javascript
 
-	function Love(){
+	function Lover(){
 		//私有方法
 		var loveU = function(){
 			alert('love u');
@@ -112,22 +112,22 @@ comments: true
 	}
 
 	//类方法
-	Love.loveHe = function(){
+	Lover.loveHe = function(){
 		alert('love him');
 	}
 
-	Love.loveHe();
-	var l1 = new Love();
+	Lover.loveHe();
+	var l1 = new Lover();
 	l1.loveMe();
 	l1.loveShe();
 
 ```
 
 <table style="border:1px solid #ccc;">
-  <tr>
+  <tr style="font-weight:bold;font-size:20px;">
 	<td width="50px"></td>
 	<td width="50px">可见性</td>
-	<td width="90px">定义位置</td>
+	<td width="80px">定义位置</td>
 	<td width="100px">语法</td>
 	<td width="100px">引用方式</td>
   </tr>
@@ -154,3 +154,25 @@ comments: true
   </tr>
 	
 </table>
+
+
+动态删除属性和方法
+
+- delete obj.propertyName;
+- delete obj.mehodName;
+
+```javascript
+
+	var user = new User('gaga');
+	
+	delete user.name;
+	alert(user.name);//已无此属性
+
+	var l2 = new Lover();
+	delete l2.loveMe();
+	l2.loveMe(); //已无此方法 
+
+```
+
+## 致谢
+感谢您的阅读，如果其中有任何错误或疏漏，请发送消息给我(微博：@changhu_)，谢谢。
