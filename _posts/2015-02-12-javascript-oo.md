@@ -210,3 +210,40 @@ alert(p instanceof Person);
 	foo1(1, 2);
 
 ```
+
+
+## 9. 匿名函数
+
+下面是四中匿名函数的写法
+
+- void
+- (function(){...})()
+- ~
+- !
+
+```javascript 
+	
+	var i = 0;
+
+	void function(){
+		document.writeln('<br>' + (i++));
+		(i < 9)?arguments.callee():null;
+	}();
+
+	(function(){
+		document.writeln('<br>' + (i++));
+		(i < 18)?arguments.callee():null;
+	})();
+
+	~function(){
+		document.writeln('<br>' + (i++));
+		(i < 27)?arguments.callee():null;
+	}();
+
+	!function(){
+		document.writeln('<br>' + (i++));
+		(i < 36)?arguments.callee():null;
+	}();
+
+```
+
