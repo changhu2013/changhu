@@ -80,7 +80,7 @@ header.without-description h1 {
   margin: 10px 0;
 }
 
-header.photo {
+.photo {
   position: absolute;
   right: 20px;
   top: 20px;
