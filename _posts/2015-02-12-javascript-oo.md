@@ -35,7 +35,6 @@ JS是弱类型的，内置类型简单且清晰
 
 执行上面的代码
 <input type="button" onClick="f1()" value="点我" />
-
 <script type="text/javascript">
 function f1(){
    var a = 12;
@@ -43,3 +42,35 @@ function f1(){
    alert(typeof(a));
 }
 </script>
+
+
+```javascript
+
+	function Person(name){
+		this.name = name || 'no name';	
+		this.eat = function(){
+			alert('煮熟了再吃');
+		}
+	}
+	
+	var p = new Persion('tiger');
+	
+	(p.constructor === Person)?alert('p是个人'):null;
+
+```
+
+执行上面的代码
+<input type="button" onclick="f2()" value="点我"/>
+<script type="text/javascript">
+function f2(){
+function Person(name){
+this.name = name || 'no name';	
+this.eat = function(){
+alert('煮熟了再吃');
+}
+}
+var p = new Persion('tiger');	
+(p.constructor === Person)?alert('p是个人'):null;
+}
+</script>
+
