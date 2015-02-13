@@ -7,7 +7,7 @@ comments: true
 
 ---
 
-## 数据类型
+## 1. 数据类型
 
 JS是弱类型的，内置类型简单且清晰
 
@@ -19,7 +19,7 @@ JS是弱类型的，内置类型简单且清晰
 - object 
 
 
-## type instanceof & constructor
+## 2. type instanceof & constructor
 
 - typeof 返回值有六种可能 "number", "string", "boolean", "object", "function", "undefined" _注意这里都是字符串_
 - constructor 表示创建对象的函数
@@ -57,6 +57,8 @@ function f1(){
 	
 	(p.constructor === Person)?p.getAge():null;
 
+	alert(p instanceof Person);
+
 ```
 
 执行上面的代码
@@ -66,6 +68,7 @@ function Person(age){this.age = age;this.getAge = function(){alert(this.age);}}
 function f2(){
 var p = new Person(28);
 (p.constructor === Person)?p.getAge():null;
+alert(p instanceof Person);
 }
 </script>
 
