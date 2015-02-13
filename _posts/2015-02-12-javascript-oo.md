@@ -46,31 +46,31 @@ function f1(){
 
 ```javascript
 
-	function Person(name){
-		this.name = name || 'no name';	
-		this.eat = function(){
-			alert('煮熟了再吃');
+	function Person(age){
+		this.age = age;	
+		this.getAge = function(){
+			alert(this.age);
 		}
 	}
 	
-	var p = new Persion('tiger');
+	var p = new Persion(28);
 	
-	(p.constructor === Person)?alert('p是个人'):null;
+	(p.constructor === Person)?p.getAge():null;
 
 ```
 
 执行上面的代码
 <input type="button" onClick="f2()" value="点我"/>
 <script type="text/javascript">
-function Person(name){
- this.name = name || \"no name\";	
-  this.eat = function(){
-   alert(\"煮熟了再吃\");
+function Person(age){
+ this.age = age;	
+  this.getAge = function(){
+   alert(this.age);
   }
 }
 function f2(){
-  var p = new Persion(\"tiger\");	
-  (p.constructor === Person)?alert(\"p是个人\"):null;
+  var p = new Persion(28);
+  (p.constructor === Person)?p.getAge():null;
 }
 </script>
 
