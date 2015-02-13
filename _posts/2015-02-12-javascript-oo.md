@@ -63,14 +63,14 @@ function f1(){
 <input type="button" onClick="f2()" value="点我"/>
 <script type="text/javascript">
 function Person(age){
- this.age = age;	
-  this.getAge = function(){
-   alert(this.age);
-  }
+this.age = age;
+this.getAge = function(){
+alert(this.age);
+}
 }
 function f2(){
-  var p = new Persion(28);
-  (p.constructor === Person)?p.getAge():null;
+var p = new Persion(28);
+(p.constructor === Person)?p.getAge():null;
 }
 </script>
 
