@@ -94,3 +94,24 @@ alert(p instanceof Person);
 
 ```
 
+## 4. void 运算符
+- void运算符，对表达式求值，并返回undefined.在希望求表达式的值,但又不希望脚本剩余部分看到这个结果,该运算符最有用,
+
+```javascript
+
+	var v2 = void 12;
+	alert(v2);
+
+	var v3 = void function(){ return 13; }();
+	alert(v3);
+
+	var v4 = void(v3 = 4);
+	alert(v4);
+
+	var v5 = (v3 = 'v3');
+	alert(v5);
+	alert(v3);
+
+```
+
+ 
