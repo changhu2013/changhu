@@ -72,3 +72,28 @@ alert(p instanceof Person);
 }
 </script>
 
+## 3. undefined
+
+> * 除了直接赋值和typeof()之外，其余任何对undefined的操作都将导致异常,如果要知道一个对象是不是undefined，只能采用typeof()的方法.
+> * undefined是一个已经实现的系统保留字,可以使用undefined来比较和运算.
+
+```javascript
+
+	var v;
+	if(typeof(v) === 'undefined'){
+		alert(alert(typeof(v)));
+	}
+
+	if(v === undefined){
+		alert(v === undefined);
+	}
+
+	if(!v){
+		alert(!v);
+	}
+
+```
+
+执行上面的代码
+<input type="button" onClick="f3()" value="点我" />
+<script type="text/javascript">varv;if(typeof(v)==='undefined'){alert(alert(typeof(v)));}if(v===undefined){alert(v===undefined);}if(!v){alert(!v);}</script>
