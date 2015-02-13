@@ -1,6 +1,6 @@
 ---
 
-layout: default
+layout: mobile
 title: Javascript 面向对象编程（第一部分）
 abstract: 本文将详细讲解Javascript语言面向对象的相关知识点
 comments: true
