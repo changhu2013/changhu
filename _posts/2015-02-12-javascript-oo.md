@@ -1,11 +1,9 @@
 
 ---
-
 layout: default
 title: Javascript 面向对象编程
 abstract : 本文将详细讲解Javascript语言面向对象编程的一些特性
 comments: true
-
 ---
 
 ## 数据类型
@@ -44,19 +42,3 @@ function f1(){
    alert(typeof(a));
 }
 </script>
-
-
-<<<<<<< HEAD
-  
-=======
-### 1. 基本数据类型
-
-- string
-- number
-- undefined
-- null
-- object
-
-
-### 2. 原型链
->>>>>>> 3a8caca0ee39b566025e4baccac950e0ed8c2153
