@@ -60,17 +60,17 @@ function f1(){
 ```
 
 执行上面的代码
-<input type="button" onclick="f2()" value="点我"/>
+<input type="button" onClick="f2()" value="点我"/>
 <script type="text/javascript">
-function f2(){
 function Person(name){
-this.name = name || 'no name';	
-this.eat = function(){
-alert('煮熟了再吃');
+ this.name = name || 'no name';	
+  this.eat = function(){
+   alert('煮熟了再吃');
+  }
 }
-}
-var p = new Persion('tiger');	
-(p.constructor === Person)?alert('p是个人'):null;
+function f2(){
+  var p = new Persion('tiger');	
+  (p.constructor === Person)?alert('p是个人'):null;
 }
 </script>
 
