@@ -79,6 +79,26 @@ header h1 {
 header.without-description h1 {
   margin: 10px 0;
 }
+
+header.photo {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  margin: 10px;
+  padding: 0;
+
+  width : 80px;
+  height : 80px;
+  
+  background: #5198DF;
+
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
 header p {
   margin: 0;
   color: #61778B;
@@ -140,14 +160,9 @@ header ul:before {
 }
 header ul li {
   width: 80px;
-  height: 80px;
+  height: 38px;
   float: left;
-  border-right: 1px solid #3A7CBE;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
+  border-right: 1px solid #3A7CBE; 
 }
 header ul li.single {
   border: none;
