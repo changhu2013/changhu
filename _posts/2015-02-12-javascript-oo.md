@@ -247,3 +247,22 @@ alert(p instanceof Person);
 
 ```
 
+## 10. eval
+
+- eval 检查JS并执行，和SQL的exec()类似
+- 正在表达式的exec()方法
+
+```javascript
+
+	var s1 = 'document.all.d1';
+	eval(s1).innerHTML = 'changhu';
+
+	var src = 'chang hu ABC DEF';
+	var re = /[A-Z]+\s/g;
+	var arr
+	while((arr = re.exec(src)) != null){
+		document.writeln('\t' + arr);
+	}
+
+```
+
