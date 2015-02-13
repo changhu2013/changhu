@@ -114,4 +114,39 @@ alert(p instanceof Person);
 
 ```
 
- 
+## 5. number
+
+- Number.MAX_VALUE：返回 JScript 能表达的最大的数。约等于 1.79E+308。
+- Number.MIN_VALUE：返回 JScript 中能够表示的最接近零的数。约等于 2.22E-308。注意不是最小的数。
+- 由于没有整形的缘故。可以使用parseInt()方法。
+- NaN:表示算术表达式返回非数字值的特殊值。
+- Infinity:返回比在js中能够表示的最大的数(Number.MAX_VALUE)更大的值。在数学运算中与正无穷大一样。
+- isNaN: 返回一个 Boolean 值，指明提供的值是否是保留值 NaN （不是数字)
+
+## 6. boolean (略)
+
+## 7. string
+- link():把一个有 HREF 属性的 HTML 锚点放置在 String 对象中的文本两端。
+- big():把 HTML <BIG> 标记放置在 String 对象中的文本两端。
+- 另外类似的方法还有：anchor(), blink(), bold(), fixed(), fontcolor(),fontsize(), italics(), small(), strike(), sub(), sup()
+
+```javascript
+	
+	var s1 = 'link';
+	document.write(s1.link("http://changhu2013.github.io/changhu"));
+
+	var s2 = new Object();
+	s2.name = 'changhu';
+	s2.age = 28;
+	
+	document.writeln(s2);
+	document.writeln(s2.toString());
+
+	s2.toString = function(){
+		return 'name :' + this.name + ' age:' + this.age;
+	}
+
+	document.writeln(s2.toString());
+
+```
+
