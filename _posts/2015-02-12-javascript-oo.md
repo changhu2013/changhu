@@ -63,14 +63,14 @@ function f1(){
 <input type="button" onClick="f2()" value="点我"/>
 <script type="text/javascript">
 function Person(name){
- this.name = name || 'no name';	
+ this.name = name || "no name";	
   this.eat = function(){
-   alert('煮熟了再吃');
+   alert("煮熟了再吃");
   }
 }
 function f2(){
-  var p = new Persion('tiger');	
-  (p.constructor === Person)?alert('p是个人'):null;
+  var p = new Persion("tiger");	
+  (p.constructor === Person)?alert("p是个人"):null;
 }
 </script>
 
