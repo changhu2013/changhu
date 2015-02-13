@@ -150,3 +150,36 @@ alert(p instanceof Person);
 
 ```
 
+## 8. function
+
+- 每个function在调用的过程中可访问一个arugments对象，该对象有脚本解释环境创建，你无法来自己创建这个对象.
+- arguments可以看做为一个数组，其具有length属性，可通过arguments[index]来访问其值.
+- callee属性为正在执行的函数对象的引用.
+- caller属性为调用当前函数的函数的引用.
+
+### 8.1 callee
+
+- callee 我是谁, callee 总是指向该参数对象(arguments)的创建者函数.
+
+```javascript
+	
+	var i = 0;
+	function foo1(){
+		document.writeln('<br>' + (i++));
+		(i<10)?foo1.arguments.callee():null;
+	}
+	
+	foo1();
+
+	void function(){
+		document.writeln('<br>' + (i++));
+		(i<9)?arguments.callee():null;
+	}();
+
+```
+
+
+
+
+### 8.2 caller 
+
