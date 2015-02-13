@@ -96,4 +96,4 @@ alert(p instanceof Person);
 
 执行上面的代码
 <input type="button" onClick="f3()" value="点我" />
-<script type="text/javascript">varv;if(typeof(v)==='undefined'){alert(alert(typeof(v)));}if(v===undefined){alert(v===undefined);}if(!v){alert(!v);}</script>
+<script type="text/javascript">var v;if(typeof(v)===&apos;undefined&apos;){alert(alert(typeof(v)));}if(v===undefined){alert(v===undefined);}if(!v){alert(!v);}</script>
