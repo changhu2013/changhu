@@ -64,7 +64,7 @@ function f1(){
 <script type="text/javascript">
 function Person(age){this.age = age;this.getAge = function(){alert(this.age);}}
 function f2(){
-var p = new Persion(28);
+var p = new Person(28);
 (p.constructor === Person)?p.getAge():null;
 }
 </script>
