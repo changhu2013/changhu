@@ -54,7 +54,18 @@ comments: true
 
 ```
 
-3. 编写一个构造函数,通过new方法来创建对象
+3. create
+
+```javascript
+
+	var o = Object.create({
+		name : 'changhu',
+		age : 25
+	});
+
+```
+
+4. 编写一个构造函数,通过new方法来创建对象
 
 ```javascript
 
@@ -159,7 +170,21 @@ comments: true
 </table>
 
 
-动态删除属性和方法
+5. 属性的查询和赋值
+
+可通过点 . 和 [] 来查询和设置属性的值
+
+```javascript
+
+	var n = o.name;
+	var a = o['age'];
+
+	o.name = 'ct';
+	o['age'] = 14;
+
+```
+
+6. 动态删除属性和方法
 
 - delete obj.propertyName;
 - delete obj.mehodName;
