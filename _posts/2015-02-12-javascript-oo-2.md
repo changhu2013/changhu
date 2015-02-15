@@ -24,6 +24,7 @@ comments: true
 - isPropertyOf(object) 判断对象是否是另一个对象的原型
 
 1. new
+ 
 ```javascript
 
 	var o1 = new Object({name:'changhu'})
