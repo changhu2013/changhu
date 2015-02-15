@@ -24,18 +24,20 @@ comments: true
 - isPropertyOf(object) 判断对象是否是另一个对象的原型
 
 1. new
- 
-```javascript
 
-	var o1 = new Object({name:'changhu'})
+```javascript
+	
+	var o1 = new Object({
+		name:'changhu'
+	});
 
 	o1.age = 28;
 
 	for(var v in o1){
 		alert(v + ' : ' + o1[v]);
 	}
-
-``` 
+	
+```
 
 2. 对象初始化方法
 
