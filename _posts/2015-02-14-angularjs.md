@@ -13,7 +13,10 @@ comments: true
 
 <div ng-app>
 请输入您的名字:<input type="text" ng-model="name" />
-你好:<span ng-bind="name"></span>
+性别:<input value="男" ng-model="gender" type="radio">男
+<input value="女" ng-model="gender" type="radio">女
+
+你好:<span ng-bind="name"></span>{{gender == "男" ? "先生" : "女士"}}
 <div>
 
 上面这个输入框的实现代码如下：
@@ -26,6 +29,7 @@ comments: true
 	<script src="{{site.baseurl}}/javascripts/angular.js"></script>
 ```
 只需要如此简单的几行代码就实现了一个看似很复杂的功能，是不是很牛X
+
 
 <script src="{{site.baseurl}}/javascripts/angular.js"></script>
 
