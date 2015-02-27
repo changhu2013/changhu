@@ -11,6 +11,8 @@ comments: false
 
 - 非线程安全的
 
+- HashMap 比 Hashtable 的操作效率高
+
 - key 和 value 允许为 null 值
 
 - HashMap 内部是一个数组 + 链表的结构，put 一个元素的时候 HashMap 会根据 key 的 hash 值算出要存放的数组的位置，如果两个元素算出的数组值相同，那么他们会被放到同一个位置。获取该元素的时候，会根据 key 的 hash 找到数组的位置，然后再找到链表中的元素。
@@ -80,7 +82,7 @@ comments: false
 
 ```
 
-
+_注意上面代码中的indexFor方法， 数组的长度始终为 2 的幂数_, 使用 h & (length - 1) 等价于 h & length 操作， 求 & 比求 % 的效率要高。
 
 
 - 数组大小，默认为 16 HashMap 的最大值也是有设定的
@@ -260,5 +262,71 @@ comments: false
     }
 
 ```
+
+- 这里和 HashMap 不同，该方法是 synchronized 的
+- 这里没有对 hash 直接处理，而是直接使用 hash 值，在计算下标时也和 HashMap 不同，采用普通的求模方式，在求模之前进行求绝对值操作
+
+
+```java
+
+    /**
+     * Maps the specified <code>key</code> to the specified
+     * <code>value</code> in this hashtable. Neither the key nor the
+     * value can be <code>null</code>. <p>
+     *
+     * The value can be retrieved by calling the <code>get</code> method
+     * with a key that is equal to the original key.
+     *
+     * @param      key     the hashtable key
+     * @param      value   the value
+     * @return     the previous value of the specified key in this hashtable,
+     *             or <code>null</code> if it did not have one
+     * @exception  NullPointerException  if the key or value is
+     *               <code>null</code>
+     * @see     Object#equals(Object)
+     * @see     #get(Object)
+     */
+    public synchronized V put(K key, V value) {
+	// Make sure the value is not null
+	if (value == null) {
+	    throw new NullPointerException();
+	}
+
+	// Makes sure the key is not already in the hashtable.
+	Entry tab[] = table;
+	int hash = key.hashCode();
+	int index = (hash & 0x7FFFFFFF) % tab.length;
+	for (Entry<K,V> e = tab[index] ; e != null ; e = e.next) {
+	    if ((e.hash == hash) && e.key.equals(key)) {
+		V old = e.value;
+		e.value = value;
+		return old;
+	    }
+	}
+
+	modCount++;
+	if (count >= threshold) {
+	    // Rehash the table if the threshold is exceeded
+	    rehash();
+
+            tab = table;
+            index = (hash & 0x7FFFFFFF) % tab.length;
+	}
+
+	// Creates the new entry.
+	Entry<K,V> e = tab[index];
+	tab[index] = new Entry<K,V>(hash, key, value, e);
+	count++;
+	return null;
+    }
+
+
+```
+
+##　３. 总结
+
+- HashMap 对 hash 值进行处理，（处理的目的是：为了得到一个正数；为了接下来进行indexFor时尽可能得到均匀的下标值）
+- Hashtable 没有对 hash 进行处理，只进行简单 hash & 0x7FFFFFFF (取绝对值), HashMap 在进行算下标的时候 使用的 求 & (与运算), Hashtable 使用了求 % 模运算 _之所以可以使用求与代替求模运算，是建立在HashMap的数组长度为 2 的幂数的基础上的, 依次来提高了效率_ 
+
 
 
