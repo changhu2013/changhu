@@ -44,6 +44,8 @@ public class Q01 {
 - Java 堆用于存储对象实例，只要不断滴创建对象，并保证GC Roots到对象之间有可达路径来避免垃圾回收机制清除这些对象，那么在对象数量到达最大堆限制时则会产生堆溢出异常
 
 **运行结果:**
+
+
 ```java
 
 1
@@ -61,10 +63,4 @@ Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
 	at chang.hu.t2.Q01.testHeap(Q01.java:16)
 	at chang.hu.t2.Q01.main(Q01.java:27)
 
-
 ```
-
-
-
-  
-
