@@ -2,7 +2,7 @@
 
 layout: default
 title: Javascript 闭包(Closure)
-abstract: 
+abstract: 函数闭包、对象闭包、闭包的特点
 comments: false
 
 ---
