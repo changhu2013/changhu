@@ -14,3 +14,7 @@ comments: true
 - 对象通过一个内部的属性绑定到他的原型，Firefox，Safari，Chrome浏览器中以\__proto\__对开发这可见. 
 
 
+
+
+
+
