@@ -14,7 +14,7 @@ comments: true
 <div ng-app>
 请输入您的名字:<input type="text" ng-model="name" />
 性别:
-<input value="先生" checked ng-model="gender" type="radio">男
+<input value="先生" ng-model="gender" type="radio">男
 <input value="女士" ng-model="gender" type="radio">女
 
 你好:<span ng-bind="name"></span><span ng-bind="gender"></span><div>
@@ -24,7 +24,8 @@ comments: true
 ```html
 	<div ng-app>
 		请输入您的名字:<input type="text" ng-model="name" />
-		你好:<span ng-bind="name"></span>
+		性别:<input value="先生" ng-model="gender" type="radio">男 <input value="女士" ng-model="gender" type="radio">女
+		你好:<span ng-bind="name"></span><span ng-bind="gender"></span><div>
 	<div>
 	<script src="{{site.baseurl}}/javascripts/angular.js"></script>
 ```
