@@ -131,6 +131,7 @@ define(function (require, exports, module) {
 
 ```javascript
 
+//局部的 require 需要在AMD模式中的 define 工厂函数中传入 require。
 define(['require'], function (require) {
 
     //the require in here is a local require.
