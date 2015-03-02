@@ -1,8 +1,8 @@
 ---
 
 layout: default
-title: 我的简历
-abstract : 求职意向Java开发工程师 JS工程师
+title: resume
+abstract : 
 comments: false
 
 ---
