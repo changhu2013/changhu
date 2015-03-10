@@ -7,9 +7,12 @@ comments: false
 
 ---
 
+
 pm_master.js
 
+
 ```javascript
+
 
 var app = require('pm').createMaster({
     pidfile : 'bench.pid',
@@ -62,10 +65,12 @@ app.dispatch();
 
 ```
 
+
 pm_worker.js
 
 
-```javascipt
+```javascript
+
 
 var app = require('./app.js');
 var http = require('http').createServer(app);
@@ -99,6 +104,7 @@ pm_socketio.js
 
 ```javascript
 
+
 var http = require('http').createServer(function(req, res){
     res.end('这个是web socket服务');
 });
@@ -129,5 +135,3 @@ worker.on('suicide', function (by) {
 
 
 ```
-
-
