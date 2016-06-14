@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<title>{{page.abstract}}</title>
+
+	<link rel="stylesheet" href="{{site.baseurl}}/stylesheets/styles.css">
+	<link rel="stylesheet" href="{{site.baseurl}}/stylesheets/pygment_trac.css">
+	<script src="{{site.baseurl}}/javascripts/scale.fix.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+  </head>
+  <body>
+	<div class="wrapper">
+	  <header>
+		<h1><a href="http://{{site.username}}.github.io/changhu/">{{site.title}}</a></h1>
+		<p>程序员一枚</p>
+		<img class="photo" src="{{site.baseurl}}/stylesheets/ch.jpg">
+	  </header>
+	  <section>
+		<h3><a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a> {{ page.title }}</h3>{{ content }}
+	  </section>
+	  <section class="comments">
+		{% if page.comments %}
+		  {% include comments.ext %}
+		{% endif %}
+	  </section>
+	</div>
+
+	<footer>
+	  <p>Github : <a href="https://github.com/changhu2013">changhu2013</a></p>
+	  <p>微博 : <a href="http://weibo.com/512353363">@changhu_</a></p>
+	</footer>
+
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" >
+var jiathis_config={
+  siteNum:3,
+  sm:"tsina,fav,copy",
+  summary:"",
+  boldNum:3,
+  ralateuid:{
+	 "tsina":"changhu_"
+  },
+  showClose:false,
+  shortUrl:false,
+  hideMore:true
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jiathis_r.js?btn=r.gif&move=1" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+<!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
+  </body>
+</html>
