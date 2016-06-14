@@ -6,3 +6,4 @@ var d = 4;
 var e = 5;
 var f = 10;
 var g = 11;
+var h = 12;
